@@ -3,28 +3,17 @@
     <head>
     </head>
     <body>
-        <div id="hello-world">
-            <p><strong>hello <em>world</em></strong></p>
-        </div>
+        <p>Paragraph One</p>
+        <p>Paragraph Two</p>
+        <p>Paragraph Three</p>
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
         <script>
-            var el = $("#hello-world");
-            var span = document.createElement("span");
-            span.innerHTML = "this is a span element";
-
-            el.append("<p>this new content</p>", span);
-            el.prepend("<p>this new content at the beginning</p>");
-
-            el.before("<div><p>this is before</p></div>");
-            el.after("<div><p>this is after</p></div>");
-
-            // el.empty();
-            el.remove();
-
-            // Add content: .append, .prepend, .before, .after
-            // Take away content: .empty, .remove
+            // Event listener
+            $("p").click(function(e) {
+                alert("the paragraph was clicked");
+            });
         </script>
     </body>
 </html>
