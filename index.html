@@ -11,16 +11,15 @@
 
         <script>
             var el = $("#hello-world");
-            el.append("<p>this new content</p>");
+            var span = document.createElement("span");
+            span.innerHTML = "this is a span element";
+
+            el.append("<p>this new content</p>", span);
             el.prepend("<p>this new content at the beginning</p>");
 
             el.before("<div><p>this is before</p></div>");
             el.after("<div><p>this is after</p></div>");
 
-            var span = document.createElement("span");
-            span.innerHTML = "this is a span element";
-
-            el.append(span);
         </script>
     </body>
 </html>
