@@ -3,17 +3,18 @@
     <head>
     </head>
     <body>
-        <p data-attr="bar">Hello world!</p>
-        <p class="foo">This was added</p>
+        <div id="hello-world">
+            <p><strong>hello <em>world</em></strong></p>
+        </div>
     </body>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
     <script>
-        var elements = $("[data-attr='bar']");  // jQuery object (has utility methods)
+        var el = $("#hello-world");
 
-        elements.css("color", "blue");  // CSS method has built-in loop, don't have to iterate
+        var htmlContent = el.html();    // select html, with elements
 
-        // alert(elements.length);
+        console.log(htmlContent);
     </script>
 </html>
