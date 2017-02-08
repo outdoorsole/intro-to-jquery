@@ -10,8 +10,10 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
     <script>
-        var elements = $("[data-attr='bar']");
+        var elements = $("[data-attr='bar']");  // jQuery object (has utility methods)
 
-        alert(elements.length);
+        elements.css("color", "blue");  // CSS method has built-in loop, don't have to iterate
+
+        // alert(elements.length);
     </script>
 </html>
