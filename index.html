@@ -11,10 +11,15 @@
 
         <script>
             // Event listener
-            $("p").click(function(e) {
+            $("p").mouseleave(function(e) {
                 alert("the paragraph was clicked");
             });
+
+            // types of event listeners:
+            // .click, .dblclick, .mouseenter, .mouseleave
         </script>
+
+
 
         <!-- Only the elements that have been selected will have the click event. This one will not -->
         <p>Paragraph Four</p>
