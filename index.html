@@ -13,6 +13,9 @@
             var el = $("#hello-world");
             el.append("<p>this new content</p>");
             el.prepend("<p>this new content at the beginning</p>");
+
+            el.before("<div><p>this is before</p></div>");
+            el.after("<div><p>this is after</p></div>");
         </script>
     </body>
 </html>
