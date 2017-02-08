@@ -16,6 +16,11 @@
 
             el.before("<div><p>this is before</p></div>");
             el.after("<div><p>this is after</p></div>");
+
+            var span = document.createElement("span");
+            span.innerHTML = "this is a span element";
+
+            el.append(span);
         </script>
     </body>
 </html>
