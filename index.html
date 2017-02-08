@@ -7,19 +7,25 @@
             <p><strong>hello <em>world</em></strong></p>
             <p>some other text</p>
         </div>
+
+        <input type="text" id="text-box" value="some value" />
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+        <script>
+            var el = $("#hello-world");
+            var textBox = $("#text-box");
+
+            var htmlContent = el.html();    // select html, with elements
+            var textContent = el.text();
+
+            // console.log(textContent);
+
+            el.html("<p>some text</p>");    // sets the html content
+            el.text("<p>some text</p>");    // only sets the text; <p> tags are encoded
+
+            var textBoxValue = textBox.val();
+            console.log(textBoxValue);
+        </script>
     </body>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-    <script>
-        var el = $("#hello-world");
-
-        var htmlContent = el.html();    // select html, with elements
-        var textContent = el.text();
-
-        console.log(textContent);
-
-        el.html("<p>some text</p>");    // sets the html content
-        el.text("<p>some text</p>");    // only sets the text; <p> tags are encoded
-    </script>
 </html>
