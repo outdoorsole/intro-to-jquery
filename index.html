@@ -11,12 +11,15 @@
 
         <script>
             // Event listener
-            $("p").mouseleave(function(e) {
+            // $("p").click(function(e) {
+            //     alert("the paragraph was clicked");
+            // });
+
+            // Another way:
+            $("p").on("click", function(e) {
                 alert("the paragraph was clicked");
             });
 
-            // types of event listeners:
-            // .click, .dblclick, .mouseenter, .mouseleave
         </script>
 
 
